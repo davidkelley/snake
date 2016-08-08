@@ -7,15 +7,15 @@
 		return val - (val % 100);
 	};
 
-	game.width = document.width;
-	game.height = document.height;
+	game.width = 600;
+	game.height = 600;
 
 	//determine playing area dimensions
-	var w = 400;
-	var l = document.width / 2 - w / 2;
+	var w = 600;
+	var l = 600 / 2 - w / 2;
 
-	var h = 400;
-	var t = document.height / 2 - h / 2;
+	var h = 600;
+	var t = 600 / 2 - h / 2;
 
 	var board = {
 		width: w,
@@ -174,7 +174,7 @@
 			keypress = false;
 
 			//set main again
-			main();
+			// main();
 
 		} else {
 			var score = snake.length * 100;
